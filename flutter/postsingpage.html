@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF=8">
+        <title>Flutter/posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	 crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+
+    <body>
+        <header class='header'>
+            <h1 class='title'>Flutter</h1>
+            <div class='search-tab'>
+                <input type='text' placeholder="Search...">
+                <button class='search-button'></button>
+            </div>
+        </header>
+
+        <div class="container-bg">
+            <main class="container">
+                <aside class="profile">
+                    <figure class="profile-avatar">
+                        <img src="avatar-woman.png" alt="BP" class="profile-image" width="84" height="84" />
+                        <figcaption class="profile-name" id="profile-name">Krasimira Stankova</figcaption>
+                    </figure>
+    
+                    <div class="profile-details">
+                        <div class="profile-info">
+                            <h3>Posts</h3>
+                            <p id="profile-posts-count">9</p>
+                        </div>
+                        <div class="profile-info">
+                            <h3>Reactions</h3>
+                            <p id="profile-likes-count">14</p>
+                        </div>
+    
+                        <button class="profile-button" id="logout-btn">Log Out</button>
+                    </div>
+                </aside>
+                <section class="posts">
+                    <header class="pots-section-header">
+                        <figure class="profile-avatar post-section-header-avatar">
+                            <img src="avatar-woman.png" alt="KS" class="profile-image" width="32" height="32">
+                        </figure>
+                        <div class="post-section-input-container">
+                            <form method="POST" id="new-post">
+                                <input type="text" placeholder="Say something..." id="new-post-text">
+                                <button class="far fa-comment-alt"></button>
+                            </form>
+                        </div>
+                    </header>
+                    <div class="lds-ripple" id="loader"><div></div><div></div></div>
+                    <section class="posts-section" id="post-container">
+                        <div class="post">
+                            <figure class="profile-avatar post-section-avatar">
+                                <img src="avatar-woman.png" alt="II" class="profile-image" width="40" height="40">
+                            </figure>
+                            <div class="post-content">
+                                <div class="post-author">
+                                    <h3 class="post-author-name">Krasimira Stankova</h3>
+                                    <span class="post-delimiter fa fa-circle"></span>
+                                    <span class="post-date">5 minutes ago</span>
+                                </div>
+                                <p class="post-text">I've written something here</p>
+                                <div class="post-footer">
+                                    <div class="post-reaction">
+                                        <button class="far fa-thumbs-up like-btn" ></button>
+                                        <span class="post-likes">2</span>
+                                    </div>
+    
+                                    <div class="post-reaction dislike-container">
+                                        <button class="far fa-thumbs-down dislike-btn"></button>
+                                        <span class="post-dislikes">1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-close">
+                                <button class="post-close fa fa-times" data-id="${data.key}"></button>
+                            </div>
+                        </div>
+                        <div class="post">
+                                <figure class="profile-avatar post-section-avatar">
+                                    <img src="avatar-woman.png" alt="II" class="profile-image" width="40" height="40">
+                                </figure>
+                                <div class="post-content">
+                                    <div class="post-author">
+                                        <h3 class="post-author-name">Ivana Ivanova</h3>
+                                        <span class="post-delimiter fa fa-circle"></span>
+                                        <span class="post-date">Lats month</span>
+                                    </div>
+                                    <p class="post-text">This is my first post.</p>
+                                    <div class="post-footer">
+                                        <div class="post-reaction">
+                                            <button class="far fa-thumbs-up like-btn" ></button>
+                                            <span class="post-likes">33</span>
+                                        </div>
+    
+                                        <div class="post-reaction dislike-container">
+                                            <button class="far fa-thumbs-down dislike-btn"></button>
+                                            <span class="post-dislikes">7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post-close">
+                                    <button class="post-close fa fa-times" data-id="${data.key}"></button>
+                                </div>
+                            </div>
+                    </section>
+                </section>
+            </main>
+        </div>
+      
+    </body>
+</html>
