@@ -364,6 +364,9 @@ POSTS
     display: flex;
 }
 
+.errors {
+    color: red;
+}
 
 
 @media screen and (max-width: 55.5rem) {

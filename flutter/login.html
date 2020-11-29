@@ -15,6 +15,7 @@
         <form class="authentication-form" id="login-form">
             <h1 class="authentication-title">Flutter</h1>
             <h2 class="authentication-sub">Login</h2>
+            <div class="errors" id="errors"></div>
             <input type="email" name="email" placeholder="Email" class="authentication-inp" />
             <input type="password" name="password" placeholder="Password" class="authentication-inp" />
 
@@ -24,6 +25,9 @@
             </div>
         </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+	<script src="script/db-facade.js"></script>
+	<script src="script/controler.js"></script>
 </body>
 
 </html>

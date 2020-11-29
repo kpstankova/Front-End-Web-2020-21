@@ -12,6 +12,7 @@
         <form class="authentication-form" id="register-form">
             <h1 class="authentication-title">Flutter</h1>
             <h2 class="authentication-sub">Join the community</h2>
+            <div class="errors" id="errors"></div>
 
             <input type="text" name="username" placeholder="User Name" class="authentication-inp" />
 			<input type="email" name="email" placeholder="Email" class="authentication-inp" />
@@ -21,5 +22,8 @@
 			</div>
         </form>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="script/db-facade.js"></script>
+	<script src="script/controler.js"></script>
 </body>
 </html>
