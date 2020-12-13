@@ -19,7 +19,7 @@
 
 		auth.register(username, email, password, (success, errorCode, errorMessage) => {
 			if (success) {
-				window.location = 'postsingpage.html';
+				window.location = 'posts.html';
 			} else {
 				errors.classList.add('errors-visible');
 				errors.innerText = errorMessage;
@@ -35,7 +35,7 @@
 
 		auth.login(email, password, (success, errorCode, errorMessage) => {
 			if (success) {
-				window.location = 'postsingpage.html';
+				window.location = 'posts.html';
 			} else {
 				errors.classList.add('errors-visible');
 				errors.innerText = errorMessage;
